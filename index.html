@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Guidelines</title>
+    <link href="Style.css" rel="stylesheet" type="text/css"> <!-- This links the css sheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!--This links to the bootstrap framework-->
+
+    <link rel="stylesheet" href="aos.css">
+
+    <script src="JQuery_v3.4.1.js"> </script> <!--Links local JQuery library-->
+    <script src="Javascript.js"> </script> <!--Links the local js file-->
+
+</head>
+
+<body>
+    <div>
+        <h1 id="header">COVID-19 Info/Guidelines</h1> <!--Fix little white space on bottom-->
+    </div>
+
+    <div class="parallax"></div>
+
+    <div id="Box" data-aos="fade-left">
+        <img src="China_map.png" id="China_Map" style="float:right">
+
+        <div>
+            <p id="First_Box_Text"> <!--Figure out how to fix positioning on this-->
+            COVID-19 (also known as novel coronavirus) 
+            appeared back in January from Wuhan China, and has been rapidly spreading across the world ever
+            since.
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div class="parallax"></div>
+
+    <div id="Box" data-aos="fade-left">
+
+        <div id="Second_Box_Title"> 
+            Simple ways to stay safe
+        </div>
+
+        
+        <button class="collapsible"> Hand Washing </button>
+
+        <div class="content">
+            <p style="margin: 20px;"> 
+                Handwashing is very essential to prevention of the virus. If theres
+                anything you should take away from this, it's proper handwashing!
+                Wash your hands for <strong> at least 20 seconds </strong> for effective
+                decontamination. Lather your hands thouroughly with soap before rinsing and 
+                make sure not to recontaminate your hands while shutting off the tap.
+            </p>
+            <br>
+            <a href="https://www.youtube.com/watch?v=3PmVJQUCm4E" target="_blank">
+                <p style="margin: 20px;">
+                    Handwashing video from the WHO
+                </p>
+            </a>
+
+        </div>
+
+        <button class="collapsible" style = "padding-right: 209px;"> Physical distancing </button>
+
+        <div class="content">
+            <p style="margin: 20px;">
+                Stay away from anyone not in your household if possible, and keep
+                at least a 2 meter distance if you can. This virus can primarily spread
+                from droplets, but these droplets can also be somewhat aresolized and
+                can hang in the air for a bit. <strong>Stay home</strong> and <strong> only go out if necessary</strong>             
+            </p>
+        </div>
+
+        <button class="collapsible"> Clean Surfaces </button>
+
+        <div class="content" style="margin-right: 482px;">
+            <p style="margin: 20px;"> 
+                The virus can be active on surfaces for up to 3 days (depending on the type of surface).
+                Disinfect and clean commonly used surfaces with soap/water, alchool or other products
+                proven to be effective againts COVID-19. <strong>Do not touch your face!</strong> If you
+                had any virus antigens on your hands, you would be letting them into your body when you touch your
+                eyes, mouth or nose. 
+            </p>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="Box" data-aos="fade-right">
+
+        <div id="Third_Box_Title"> 
+            Physical distancing instead of Social isolating
+        </div>
+
+        <img src="Phone_Graphic.png" id="PhoneGraphic">
+        <div id= "Physical_Distancing">
+            <p>
+                Physical distancing does not have to be social isolation.
+                With all the technology at our disposale, there are many ways to 
+                keep in touch with friends and loved ones who you may not be able
+                to see for a while. Stay in touch, and take care of your mental and 
+                physical well being! 
+            </p>
+        </div>
+
+        
+
+    </div>
+
+    <div class="parallax"></div>
+
+    <div id="Box" data-aos="fade-right"> <!--Maybe change this animation to something else-->
+
+        <p id="Last_Box_Title"> Perservere! We will get through this </p>
+        <br>
+        <br>
+        
+        <p id="Usefull_Links_Text"> For professional sources of information on the virus, refer to the CDC and WHO websites</p>
+
+        <br><br>
+
+        <div id=button_wrapper>
+            
+            <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank">
+                <button id="LastPageButtons" class="btn btn-outline-secondary" style="font-size: 40px; margin-right: 50px;">
+                    Link to WHO 
+                </button>
+            </a>
+
+            <a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank">
+                <button class="btn btn-outline-secondary" style="font-size: 40px;">
+                    Link to CDC
+                </button>
+            </a>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="aos.js"> </script> <!--Linking AOS js file-->
+
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1400,
+        });
+    </script>
+
+    <script>    //Script for collapsable buttons
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } 
+            else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+    </script>
+
+</body>
+</html> 

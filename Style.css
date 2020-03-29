@@ -1,0 +1,132 @@
+#header {
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: black;
+    background-color: grey;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parallax {
+    background-image: url("Covid19_image.jpg");
+    
+    min-height: 700px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Box {
+    height: 600px;
+    background-color:rgb(255, 255, 255);
+}
+
+#First_Box_Text {
+    margin-right: 1100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font: 50px sans-serif;
+    text-align: center;
+}
+
+#China_Map {
+    border: solid black 2px;
+    padding: 1px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-bottom: 500px;
+}
+
+#Second_Box_Title {
+    margin-top: 10px;
+    margin-right: 600px;
+    margin-left: 600px;
+    padding: 1px;
+    text-align: center;
+    font: 50px sans-serif;
+}
+
+/* For collapsable buttons*/
+
+.collapsible { /*This is the buttons itself*/
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    padding-right: 300px;
+    padding-left: 300px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 500px;
+    outline: none;
+    font-size: 50px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #555;
+}
+  
+.content { /*Content of the collapsables*/
+    max-height: 0;
+    overflow: hidden;
+    margin-right: 480px;
+    margin-left: 500px;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+#Third_Box_Title {
+    margin-top: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 1px;
+    text-align: center;
+    font: 50px sans-serif;
+}
+
+#Physical_Distancing {
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    margin-left: 440px;
+    margin-right: 850px;
+    padding: 10px;
+    text-align: left;
+    font: 40px sans-serif;
+}
+
+#PhoneGraphic {
+    width: 25%;
+    margin-top: 50px;
+    height: auto;
+    float: right;
+    margin-right: 400px;
+}
+
+#Last_Box_Title {
+    margin-top: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 1px;
+    text-align: center;
+    font: 50px sans-serif;
+}
+
+#Usefull_Links_Text {
+    margin-top: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 1px;
+    text-align: center;
+    font: 50px sans-serif;
+}
+
+#button_wrapper {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
